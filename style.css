@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "Inknut Bold";
+  src: url("./assets/inknutantiqua/inknutantiqua/InknutAntiqua-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Inknut ExtraBold";
+  src: url("./assets/inknutantiqua/inknutantiqua/InknutAntiqua-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inknut Regular";
+  src: url("./assets/inknutantiqua/inknutantiqua/InknutAntiqua-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inknut Regular";
+}
+
+body {
+  width: 100vw;
+  color: #fff;
+  background-color: #111;
+  overflow: hidden;
+  scrollbar-color: #0099ff transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0099ff;
+  border-radius: 1rem;
+}
+
+body:hover {
+  overflow-y: scroll;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 2rem;
+  border-bottom: 1px solid #000;
+}
+
+.logoSec > span {
+  color: #0099ff;
+}
+
+.navSec {
+  width: 12vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  z-index: 10;
+}
+
+.navSec > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navItem {
+  height: 2rem;
+  background-color: transparent;
+  transition: 1s;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  text-align: center;
+  padding-inline: 0.5rem;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  box-shadow: inset 0 -4rem 0 0 #0099ff;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.firstSection {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 13rem 3rem;
+}
+
+.picture {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  width: 50rem;
+  background-image: url("./assets/images/blob.svg");
+}
+
+.picture > img {
+  position: relative;
+  right: 4rem;
+  border-radius: 100%;
+}
+
+.bigTxt {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: "Inknut ExtraBold";
+}
+
+.midTxt {
+  position: relative;
+  bottom: 6rem;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Inknut Bold";
+}
+
+.midTxt > span {
+  color: #0099ff;
+}
+
+.smTxt {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 5rem;
+  width: 21em;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.smTxt {
+  animation: typewriter 8s steps(42) 1s infinite normal both,
+    blinkTextCursor 500ms steps(42) infinite normal;
+}
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 21em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* styles for second section */
+.secondSection {
+  height: fit-content;
+  margin-top: 10rem;
+}
+
+.section > p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Inknut Bold";
+  color: #0099ff;
+}
+
+.skillsCon,
+.aboutCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.skillInfo,
+.aboutTxt {
+  font-size: 0.9rem;
+  width: 25rem;
+}
+
+.thirdSection {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expBox {
+  width: 80%;
+  height: fit-content;
+  padding: 2rem;
+  border: 1px solid #0099ff;
+  border-top: none;
+  cursor: pointer;
+}
+
+.expCon {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  height: fit-content;
+}
+
+.details {
+  display: none;
+  font-size: 0.8rem;
+}
+
+.first {
+  margin-top: 2rem;
+  border-top: 1px solid #0099ff;
+}
+
+.date {
+  font-size: 1.9rem;
+  flex: 1;
+}
+
+.company {
+  flex: 1;
+  font-size: 1.3rem;
+}
+
+.location,
+.position {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.fourthSection {
+  padding: 2rem;
+}
+
+.skillsCon {
+  margin-top: 2rem;
+}
+
+.skillInfo {
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillBox {
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #0099ff;
+  cursor: pointer;
+}
+
+.skillBox:hover {
+  border: none;
+  color: #fff;
+  background-color: #0099ff;
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.fifthSection > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+#name,
+#email {
+  height: 3rem;
+  width: 20rem;
+  color: #fff;
+  background-color: transparent;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  border: 1px solid #0099ff;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+textarea {
+  width: 41.5rem;
+  color: #fff;
+  background-color: transparent;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #0099ff;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+button {
+  height: 3rem;
+  width: 41.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  border: 1px solid #0099ff;
+  transition: 0.5s;
+}
+
+button:hover,
+button:focus {
+  box-shadow: inset 41.5rem 0 0 0 #0099ff;
+  color: #111111;
+  border-color: #0099ff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  position: relative;
+  top: 20rem;
+  font-size: 0.7rem;
+  z-index: 10;
+}
+
+.socials {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.socialIcon {
+  position: relative;
+  top: 20rem;
+  color: #fff;
+  height: 22px;
+  width: 22px;
+}
+
+.socialIcon:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
